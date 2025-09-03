@@ -1,0 +1,155 @@
+.EcomHovercardwrapper {
+  position: relative;
+  /* width: auto;
+  height: auto; */
+  /* width: 35%; */
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 35vw !important;
+  margin-right: 35vw !important; */
+}
+.EcomHovercardwrapperInner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.EcomWidgetcard_image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+}
+.EcomWidgetcard_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.EcomWidgetcard_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 2;
+  transition: height 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.EcomWidgetcard_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 3;
+  /* transform: translateY(100%); */
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.EcomWidgetcard_button {
+  /* width: 100%; */
+  padding: 10px 20px;
+  background: #ff3a30;
+  /* border: 2px solid #FF3A30; */
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  /* transform: translateY(20px); */
+}
+
+
+/* .EcomWidgetProductGridWrapper */
+.EcomWidgetProductGridWrapper{
+    position: relative;
+     display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+}
+.EcomPrdGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.EcomPrdGrid .EcomPrdGridImgCntr{
+    /* border: 1px solid #000; */
+    position: relative;
+    overflow: hidden;
+}
+.EcomPrdGrid .EcomPrdGridImgCntr img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit:cover;
+}
+/* .EcomWidgetProductGridWrapper */
+@media (min-width: 991px) {
+  .EcomHovercardwrapper {
+    margin-left: 33vw !important;
+    margin-right: 33vw !important;
+  }
+  
+  .EcomWidgetcard_content {
+    transform: translateY(100%);
+    align-items: center;
+  }
+  .EcomWidgetcard_button {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  .EcomHovercardwrapperInner:hover .EcomWidgetcard_content {
+    transform: translateY(0);
+  }
+
+  .EcomHovercardwrapperInner:hover .EcomWidgetcard_button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .EcomWidgetcard_button:hover {
+  /* background: white; */
+  color: #fff !important;
+}
+/* .EcomWidgetProductGridWrapper */
+.EcomWidgetProductGridWrapper{
+    grid-template-columns: 1fr 1fr;
+}
+
+.EcomWidgetcard_contentWrapper{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent); */
+  z-index: 2;
+  transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.EcomWidgetcard_contentWrapper .EcomWidgetcard_button{
+padding: 5px 20px;
+}
+.EcomPrdGridImgCntr:hover .EcomWidgetcard_content{
+    transform: translateY(0);
+
+}
+.EcomPrdGridImgCntr:hover .EcomWidgetcard_button{
+    transform: translateY(0);
+    opacity: 1;
+
+}
+/* EcomWidgetProductGridWrapper */
+}
