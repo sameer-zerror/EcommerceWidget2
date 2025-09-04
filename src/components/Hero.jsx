@@ -25,7 +25,7 @@ const Hero = ({
                     className={`${style.hoverDiv} ${style.template1CustomHeight}`}
                   >
                     <img
-                      src="https://cdn.esquireindia.co.in/article/2025-06-25T08%3A58%3A49.944Z-image.jpg"
+                      src="https://cdn.esquireindia.co.in/article/2025-03-13T11%3A56%3A09.445Z-Lead_%C3%A2%C2%81%C2%A0LV%20x%20Pharell.jpg"
                       alt=""
                     />
                     {/* <Image
